@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Classes",
+    "children": [
+      "classes/arraytype",
+      "classes/basequery",
+      "classes/booleantype",
+      "classes/buildschemaerror",
+      "classes/connectionmanager",
+      "classes/coretype",
+      "classes/datetype",
+      "classes/document",
+      "classes/embedtype",
+      "classes/findbyidoptions",
+      "classes/findoptions",
+      "classes/iottomantype",
+      "classes/inwithinoperatorexceptions",
+      "classes/indexparamsonexceptions",
+      "classes/indexparamsusinggsiexceptions",
+      "classes/model",
+      "classes/multiplequerytypesexception",
+      "classes/numbertype",
+      "classes/ottoman",
+      "classes/query",
+      "classes/querygroupbyparamsexception",
+      "classes/queryoperatornotfoundexception",
+      "classes/referencetype",
+      "classes/schema",
+      "classes/selectclauseexception",
+      "classes/stringtype",
+      "classes/validationerror",
+      "classes/viewindexoptions",
+      "classes/whereclauseexception"
+    ]
+  },
+  {
+    "title": "Enums",
+    "children": [
+      "enums/hooks",
+      "enums/searchconsistency",
+      "enums/validation_strategy"
+    ]
+  },
+  {
+    "title": "Interfaces",
+    "children": [
+      "interfaces/collectionexpressiontype",
+      "interfaces/collectioninwithinoperatorvalue",
+      "interfaces/connectoptions",
+      "interfaces/coretypeoptions",
+      "interfaces/createmodel",
+      "interfaces/dateoption",
+      "interfaces/datetypeoptions",
+      "interfaces/iconditionexpr",
+      "interfaces/ifield",
+      "interfaces/ifindoptions",
+      "interfaces/igroupby",
+      "interfaces/iindexonparams",
+      "interfaces/iindexwithparams",
+      "interfaces/iletexpr",
+      "interfaces/iselectfieldtype",
+      "interfaces/minmaxoption",
+      "interfaces/modelmetadata",
+      "interfaces/modeloptions",
+      "interfaces/numbertypeoptions",
+      "interfaces/referenceoptions",
+      "interfaces/removeoptions",
+      "interfaces/requiredoption",
+      "interfaces/schemaoptions",
+      "interfaces/storeoptions",
+      "interfaces/stringtypeoptions",
+      "interfaces/validatoroption",
+      "interfaces/configoptions"
+    ]
+  }
+]
