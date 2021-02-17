@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Interface: IStatusExecution | Ottoman.js</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Ottoman is a ODM built for Couchbase and Node.js. ">
+    
+    <link rel="preload" href="/assets/css/0.styles.058b88e7.css" as="style"><link rel="preload" href="/assets/js/app.232a7af9.js" as="script"><link rel="preload" href="/assets/js/2.2b957f68.js" as="script"><link rel="preload" href="/assets/js/73.6132cf9a.js" as="script"><link rel="prefetch" href="/assets/js/10.1e85f7f6.js"><link rel="prefetch" href="/assets/js/11.917319af.js"><link rel="prefetch" href="/assets/js/12.cd390c18.js"><link rel="prefetch" href="/assets/js/13.ad95c9d9.js"><link rel="prefetch" href="/assets/js/14.9f78d70b.js"><link rel="prefetch" href="/assets/js/15.c32b27c3.js"><link rel="prefetch" href="/assets/js/16.4a9fa985.js"><link rel="prefetch" href="/assets/js/17.828b0378.js"><link rel="prefetch" href="/assets/js/18.263ba726.js"><link rel="prefetch" href="/assets/js/19.c0d0fc1b.js"><link rel="prefetch" href="/assets/js/20.40b43da4.js"><link rel="prefetch" href="/assets/js/21.90717502.js"><link rel="prefetch" href="/assets/js/22.1858074a.js"><link rel="prefetch" href="/assets/js/23.e7ff9b8e.js"><link rel="prefetch" href="/assets/js/24.58b7920e.js"><link rel="prefetch" href="/assets/js/25.cad6b92f.js"><link rel="prefetch" href="/assets/js/26.49bd3746.js"><link rel="prefetch" href="/assets/js/27.7cca2f5e.js"><link rel="prefetch" href="/assets/js/28.373b07c9.js"><link rel="prefetch" href="/assets/js/29.794ae7e9.js"><link rel="prefetch" href="/assets/js/3.9e035672.js"><link rel="prefetch" href="/assets/js/30.a756fa41.js"><link rel="prefetch" href="/assets/js/31.45af25fb.js"><link rel="prefetch" href="/assets/js/32.50dc6d13.js"><link rel="prefetch" href="/assets/js/33.ed2796b9.js"><link rel="prefetch" href="/assets/js/34.39a0ca94.js"><link rel="prefetch" href="/assets/js/35.a0a284d8.js"><link rel="prefetch" href="/assets/js/36.028c6255.js"><link rel="prefetch" href="/assets/js/37.2e87eabc.js"><link rel="prefetch" href="/assets/js/38.a3bd218a.js"><link rel="prefetch" href="/assets/js/39.87d69fa4.js"><link rel="prefetch" href="/assets/js/4.41b80b80.js"><link rel="prefetch" href="/assets/js/40.61900328.js"><link rel="prefetch" href="/assets/js/41.f0aace97.js"><link rel="prefetch" href="/assets/js/42.9633de86.js"><link rel="prefetch" href="/assets/js/43.4c435b6e.js"><link rel="prefetch" href="/assets/js/44.fc32fab0.js"><link rel="prefetch" href="/assets/js/45.cd972df2.js"><link rel="prefetch" href="/assets/js/46.13e489a8.js"><link rel="prefetch" href="/assets/js/47.22c62d16.js"><link rel="prefetch" href="/assets/js/48.aca9bcea.js"><link rel="prefetch" href="/assets/js/49.19cc6363.js"><link rel="prefetch" href="/assets/js/5.8ce9387f.js"><link rel="prefetch" href="/assets/js/50.b4649024.js"><link rel="prefetch" href="/assets/js/51.918a41ab.js"><link rel="prefetch" href="/assets/js/52.47b3afcf.js"><link rel="prefetch" href="/assets/js/53.75a14440.js"><link rel="prefetch" href="/assets/js/54.2fc5c75f.js"><link rel="prefetch" href="/assets/js/55.1c8494ab.js"><link rel="prefetch" href="/assets/js/56.82b56b9d.js"><link rel="prefetch" href="/assets/js/57.55f18e26.js"><link rel="prefetch" href="/assets/js/58.52143cd7.js"><link rel="prefetch" href="/assets/js/59.20ab9e37.js"><link rel="prefetch" href="/assets/js/6.43d43fde.js"><link rel="prefetch" href="/assets/js/60.16244151.js"><link rel="prefetch" href="/assets/js/61.f0caff14.js"><link rel="prefetch" href="/assets/js/62.05df90c1.js"><link rel="prefetch" href="/assets/js/63.2354158b.js"><link rel="prefetch" href="/assets/js/64.58b8aac4.js"><link rel="prefetch" href="/assets/js/65.bff90a71.js"><link rel="prefetch" href="/assets/js/66.3f730393.js"><link rel="prefetch" href="/assets/js/67.f8be864e.js"><link rel="prefetch" href="/assets/js/68.a8245b04.js"><link rel="prefetch" href="/assets/js/69.7fdf2354.js"><link rel="prefetch" href="/assets/js/7.4378b0f8.js"><link rel="prefetch" href="/assets/js/70.750878a2.js"><link rel="prefetch" href="/assets/js/71.d7bb04f5.js"><link rel="prefetch" href="/assets/js/72.d3ced7f2.js"><link rel="prefetch" href="/assets/js/74.38f1089f.js"><link rel="prefetch" href="/assets/js/75.67e4041f.js"><link rel="prefetch" href="/assets/js/76.c885d0b1.js"><link rel="prefetch" href="/assets/js/77.d44e11ed.js"><link rel="prefetch" href="/assets/js/78.7d512ae4.js"><link rel="prefetch" href="/assets/js/79.1204d46b.js"><link rel="prefetch" href="/assets/js/8.ecf23c09.js"><link rel="prefetch" href="/assets/js/80.6126a127.js"><link rel="prefetch" href="/assets/js/81.644f057b.js"><link rel="prefetch" href="/assets/js/82.0f526034.js"><link rel="prefetch" href="/assets/js/83.5b2b8e07.js"><link rel="prefetch" href="/assets/js/84.68d39026.js"><link rel="prefetch" href="/assets/js/85.be78cdc1.js"><link rel="prefetch" href="/assets/js/86.d79d69a5.js"><link rel="prefetch" href="/assets/js/87.d2076b7a.js"><link rel="prefetch" href="/assets/js/9.fe952048.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.058b88e7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Ottoman.js</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guides/quick-start.html" class="nav-link">
+  Quick Start
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Basic" class="dropdown-title"><span class="title">Basic</span> <span class="arrow down"></span></button> <button type="button" aria-label="Basic" class="mobile-dropdown-title"><span class="title">Basic</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guides/ottoman.html" class="nav-link">
+  Ottoman
+</a></li><li class="dropdown-item"><!----> <a href="/guides/schema.html" class="nav-link">
+  Schema
+</a></li><li class="dropdown-item"><!----> <a href="/guides/model.html" class="nav-link">
+  Model
+</a></li><li class="dropdown-item"><!----> <a href="/guides/document.html" class="nav-link">
+  Document
+</a></li><li class="dropdown-item"><!----> <a href="/guides/query-builder.html" class="nav-link">
+  Query Builder
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Advanced" class="dropdown-title"><span class="title">Advanced</span> <span class="arrow down"></span></button> <button type="button" aria-label="Advanced" class="mobile-dropdown-title"><span class="title">Advanced</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/how-ottoman-works.html" class="nav-link">
+  How Ottoman works
+</a></li></ul></div></div><div class="nav-item"><a href="/guides/first-app.html" class="nav-link">
+  Example
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/classes/ottoman.html" class="nav-link">
+  Ottoman
+</a></li><li class="dropdown-item"><!----> <a href="/classes/schema.html" class="nav-link">
+  Schema
+</a></li><li class="dropdown-item"><!----> <a href="/classes/model.html" class="nav-link">
+  Model
+</a></li><li class="dropdown-item"><!----> <a href="/classes/document.html" class="nav-link">
+  Document
+</a></li><li class="dropdown-item"><!----> <a href="/classes/query.html" class="nav-link">
+  Query Builder
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/couchbaselabs/node-ottoman" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guides/quick-start.html" class="nav-link">
+  Quick Start
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Basic" class="dropdown-title"><span class="title">Basic</span> <span class="arrow down"></span></button> <button type="button" aria-label="Basic" class="mobile-dropdown-title"><span class="title">Basic</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guides/ottoman.html" class="nav-link">
+  Ottoman
+</a></li><li class="dropdown-item"><!----> <a href="/guides/schema.html" class="nav-link">
+  Schema
+</a></li><li class="dropdown-item"><!----> <a href="/guides/model.html" class="nav-link">
+  Model
+</a></li><li class="dropdown-item"><!----> <a href="/guides/document.html" class="nav-link">
+  Document
+</a></li><li class="dropdown-item"><!----> <a href="/guides/query-builder.html" class="nav-link">
+  Query Builder
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Advanced" class="dropdown-title"><span class="title">Advanced</span> <span class="arrow down"></span></button> <button type="button" aria-label="Advanced" class="mobile-dropdown-title"><span class="title">Advanced</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/how-ottoman-works.html" class="nav-link">
+  How Ottoman works
+</a></li></ul></div></div><div class="nav-item"><a href="/guides/first-app.html" class="nav-link">
+  Example
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/classes/ottoman.html" class="nav-link">
+  Ottoman
+</a></li><li class="dropdown-item"><!----> <a href="/classes/schema.html" class="nav-link">
+  Schema
+</a></li><li class="dropdown-item"><!----> <a href="/classes/model.html" class="nav-link">
+  Model
+</a></li><li class="dropdown-item"><!----> <a href="/classes/document.html" class="nav-link">
+  Document
+</a></li><li class="dropdown-item"><!----> <a href="/classes/query.html" class="nav-link">
+  Query Builder
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/couchbaselabs/node-ottoman" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Interface: IStatusExecution</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interfaces/istatusexecution.html#hierarchy" class="sidebar-link">Hierarchy</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/interfaces/istatusexecution.html#implemented-by" class="sidebar-link">Implemented by</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/interfaces/istatusexecution.html#properties" class="sidebar-link">Properties</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interfaces/istatusexecution.html#optional-exception" class="sidebar-link">Optional exception</a></li><li class="sidebar-sub-header"><a href="/interfaces/istatusexecution.html#optional-message" class="sidebar-link">Optional message</a></li><li class="sidebar-sub-header"><a href="/interfaces/istatusexecution.html#payload" class="sidebar-link">payload</a></li><li class="sidebar-sub-header"><a href="/interfaces/istatusexecution.html#status" class="sidebar-link">status</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="interface-istatusexecution"><a href="#interface-istatusexecution" class="header-anchor">#</a> Interface: IStatusExecution</h1> <h2 id="hierarchy"><a href="#hierarchy" class="header-anchor">#</a> Hierarchy</h2> <ul><li><strong>IStatusExecution</strong></li></ul> <h2 id="implemented-by"><a href="#implemented-by" class="header-anchor">#</a> Implemented by</h2> <ul><li><a href="/classes/statusexecution.html">StatusExecution</a></li></ul> <h2 id="properties"><a href="#properties" class="header-anchor">#</a> Properties</h2> <h3 id="optional-exception"><a href="#optional-exception" class="header-anchor">#</a> <code>Optional</code> exception</h3> <p>• <strong>exception</strong>? : <em>undefined | string</em></p> <hr> <h3 id="optional-message"><a href="#optional-message" class="header-anchor">#</a> <code>Optional</code> message</h3> <p>• <strong>message</strong>? : <em>undefined | string</em></p> <hr> <h3 id="payload"><a href="#payload" class="header-anchor">#</a> payload</h3> <p>• <strong>payload</strong>: <em>string | Record‹string, unknown›</em></p> <hr> <h3 id="status"><a href="#status" class="header-anchor">#</a> status</h3> <p>• <strong>status</strong>: <em><a href="/globals.html#status">Status</a></em></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.232a7af9.js" defer></script><script src="/assets/js/2.2b957f68.js" defer></script><script src="/assets/js/73.6132cf9a.js" defer></script>
+  </body>
+</html>
